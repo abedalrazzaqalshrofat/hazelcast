@@ -24,6 +24,7 @@ public class HazelcastSpringbootPocApplication {
 	@Bean
 	public Config createConfig() {
 		var config = new Config();
+		config.setClusterName("hazelcast-cluster");
 		config.setInstanceName("hazelcast-instance");
 		config.addMapConfig(mapConfig());
 		config.getJetConfig().setEnabled(true);

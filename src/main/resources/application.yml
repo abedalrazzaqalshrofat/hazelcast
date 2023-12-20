@@ -1,7 +1,1 @@
-hazelcast:
-  clustername: arabot-nlu-cluster
-  members: localhost:7777,localhost:7775
-  cache:
-    my-cache:
-      near-cache:
-        invalidate-on-change=true:
+hazelcast.config-location=classpath:hazelcast.xml

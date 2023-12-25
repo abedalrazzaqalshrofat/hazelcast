@@ -1,0 +1,8 @@
+hazelcast:
+  cluster-name: studentCacheCluster
+  instance-name: firstNode
+  map:
+    studentMap:
+      in-memory-format: BINARY
+      time-to-live-seconds: 360
+      max-idle-seconds: 400
